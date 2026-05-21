@@ -105,7 +105,7 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
       <div className="mt-8 bg-blue-50 border border-blue-100 p-6 rounded-2xl flex items-center justify-center gap-4">
         <Info className="text-brand-blue shrink-0" size={32} />
         <p className="text-blue-900 text-xl">
-          Vous venez de l'étranger ? <a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux" target="_blank" rel="noreferrer" className="font-bold underline hover:text-brand-dark transition">Vérifiez les programmes spécifiques pour les étudiants internationaux.</a>
+          Vous venez de l'étranger ? <a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux" target="_blank" rel="noreferrer" className="font-bold under[...]
         </p>
       </div>
     </Slide>,
@@ -120,7 +120,7 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
         <div className="bg-red-50 p-8 rounded-3xl border-l-8 border-brand-red">
           <h4 className="text-2xl font-bold text-brand-red mb-2">Collèges Privés</h4>
           <p className="text-xl mb-4">Tu as droit à l'AFE <strong>UNIQUEMENT</strong> si le programme précis est officiellement reconnu. Vérifie toujours avant de payer ton inscription !</p>
-          <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/pret-temps-partiel/formulaires-temps-partiel" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-brand-red px-4 py-2 rounded-xl text-sm font-bold border border-brand-red/20 hover:bg-red-100 transition">
+          <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/pret-temps-partiel/formulaires-temps-partiel" target="_blank" rel="noreferrer" className="inline-flex items-center ga[...]
             <ExternalLink size={16} /> Listes des établissements reconnus (PDF)
           </a>
         </div>
@@ -149,7 +149,7 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
         <AlertOctagon className="text-brand-red shrink-0" size={32} />
         <div>
           <h4 className="font-bold text-red-800 text-xl">Mythe à débunker !</h4>
-          <p className="text-red-900 text-lg">On ne devient pas autonome automatiquement à <strong>25 ans</strong>. Il n'y a pas d'âge automatique. Ce sont uniquement les critères ci-dessus qui comptent !</p>
+          <p className="text-red-900 text-lg">On ne devient pas autonome automatiquement à <strong>25 ans</strong>. Il n'y a pas d'âge automatique. Ce sont uniquement les critères ci-dessus qu[...]
         </div>
       </div>
     </Slide>,
@@ -163,7 +163,7 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
             <li>✅ Temps partiel = Temps plein</li>
             <li className="text-brand-purple font-bold">⭐ 100% Bourse (Zéro dette !)</li>
           </ul>
-          <a href="https://cdn-contenu.quebec.ca/cdn-contenu/enseignement-superieur/aide-financiere-etudes/prets-bourses/annee-en-cours/1015-certificat-medical-DFM-2025-2026.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-brand-purple px-4 py-2 rounded-xl text-sm font-bold border border-brand-purple/20 hover:bg-purple-100 transition">
+          <a href="https://cdn-contenu.quebec.ca/cdn-contenu/enseignement-superieur/aide-financiere-etudes/prets-bourses/annee-en-cours/1015-certificat-medical-DFM-2025-2026.pdf" target="_blank" [...]
             <FileSignature size={16} /> Certificat médical (PDF)
           </a>
         </div>
@@ -184,10 +184,10 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
           </div>
         </div>
         <div className="flex gap-4 md:ml-20">
-          <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/allocation-besoins-particuliers-jeunes" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-brand-dark text-white px-4 py-2 rounded-xl text-sm font-bold hover:bg-gray-800 transition">
+          <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/allocation-besoins-particuliers-jeunes" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg[...]
             <ExternalLink size={16} className="text-brand-yellow" /> Allocation (Jeunes)
           </a>
-          <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/allocation-besoins-particuliers-adultes" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-brand-dark text-white px-4 py-2 rounded-xl text-sm font-bold hover:bg-gray-800 transition">
+          <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/allocation-besoins-particuliers-adultes" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 b[...]
             <ExternalLink size={16} className="text-brand-yellow" /> Allocation (Adultes)
           </a>
         </div>
@@ -313,7 +313,7 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
         </div>
       </div>
       <div className="text-center">
-        <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/services-ligne" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 bg-brand-blue text-white px-8 py-4 rounded-full font-black text-xl hover:bg-blue-700 transition shadow-xl">
+        <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/services-ligne" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 bg-brand-blue text-white px-[...]
           <Laptop size={28} />
           Accéder à mon dossier en ligne (Faire ma demande)
         </a>
@@ -467,8 +467,8 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
             <span className="xs:hidden">Vidéo</span>
           </a>
           <button 
-            onClick={() => window.print()} 
-            className="flex items-center gap-1 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-brand-blue hover:bg-blue-600 rounded-lg font-bold text-xs md:text-sm transition shrink-0 text-white"
+            disabled
+            className="flex items-center gap-1 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-brand-blue hover:bg-blue-600 rounded-lg font-bold text-xs md:text-sm transition shrink-0 text-white disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <Download size={16} md:size={18} /> <span className="hidden sm:inline">PDF</span>
           </button>
