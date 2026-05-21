@@ -444,9 +444,9 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
   }, [onClose]);
 
   return (
-    <div className="fixed inset-0 z-[100] bg-black flex flex-col print:static print:bg-white">
+    <div className="fixed inset-0 z-[100] bg-black flex flex-col overflow-hidden print:static print:bg-white">
       {/* Controls */}
-      <div className="flex items-center justify-between p-3 md:p-4 bg-gray-900 text-white print:hidden gap-2">
+      <div className="flex items-center justify-between p-3 md:p-4 bg-gray-900 text-white print:hidden gap-2 shrink-0">
         <div className="flex items-center gap-2 md:gap-4 shrink-0">
           <button onClick={onClose} className="p-2 hover:bg-white/10 rounded-full transition">
             <X size={20} className="md:w-6 md:h-6" />
@@ -484,7 +484,7 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
       </div>
 
       {/* Slide Content */}
-      <div className="flex-1 relative bg-white overflow-y-auto print:static">
+      <div className="flex-1 relative bg-white overflow-hidden print:static">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
