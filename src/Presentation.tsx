@@ -111,7 +111,7 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
     </Slide>,
 
     // Slide 4: Public vs Privé
-    <Slide title="Public vs Privé" subtitle="Le piège à éviter" icon={<TriangleAlert size={40} />}>
+    <Slide title='Public vs Privé' subtitle='Le piège à éviter' icon={<TriangleAlert size={40} />}>
       <div className="space-y-8">
         <div className="bg-green-50 p-8 rounded-3xl border-l-8 border-brand-green">
           <h4 className="text-2xl font-bold text-brand-green mb-2">Établissements Publics</h4>
