@@ -105,7 +105,15 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
       <div className="mt-8 bg-blue-50 border border-blue-100 p-6 rounded-2xl flex items-center justify-center gap-4">
         <Info className="text-brand-blue shrink-0" size={32} />
         <p className="text-blue-900 text-xl">
-          Vous venez de l'étranger ? <a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux" target="_blank" rel="noreferrer" className="font-bold underline"[...]
+          Vous venez de l'étranger ?{' '}
+          <a 
+            href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="font-bold underline"
+          >
+            Consultez l'aide pour les étudiants internationaux.
+          </a>
         </p>
       </div>
     </Slide>,
