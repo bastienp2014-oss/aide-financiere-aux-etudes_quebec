@@ -195,10 +195,6 @@ export default function App() {
                   <Star className="text-white mt-1 mr-3 shrink-0" size={20} />
                   <span><strong className="font-bold">Pour les grands besoins.</strong> Elle t'est versée quand le prêt maximum ne suffit pas à couvrir tes besoins financiers.</span>
                 </li>
-                <li className="flex items-start">
-                  <Star className="text-white mt-1 mr-3 shrink-0" size={20} />
-                  <span><strong className="font-bold">Ton revenu à toi.</strong> Elle est basée sur tes revenus (pas ceux de tes parents).</span>
-                </li>
                 <li className="flex items-start bg-white/20 p-3 rounded-xl mt-4">
                   <Award className="text-white mt-1 mr-3 shrink-0" size={20} />
                   <span><strong className="font-extrabold text-brand-dark">Bonus 15% :</strong> Si tu reçois une bourse et que tu termines ton programme dans les temps prévus, le gouvernement efface 15% de ton prêt à rembourser !</span>
