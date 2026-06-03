@@ -127,7 +127,7 @@ export default function App() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
               href="#pret-bourse" 
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-brand-yellow text-brand-dark font-bold text-lg py-4 px-8 rounded-full hover:bg-yellow-300 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-brand-yellow text-brand-dark font-bold text-lg py-4 px-8 rounded-full hover:bg-yellow-300 transition duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               Découvre comment ça marche <ArrowDown className="ml-2" />
             </a>
@@ -137,7 +137,7 @@ export default function App() {
                 href="https://youtube.com" 
                 target="_blank" 
                 rel="noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-red-600 text-white font-bold text-lg py-4 px-8 rounded-full hover:bg-red-700 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-red-600 text-white font-bold text-lg py-4 px-8 rounded-full hover:bg-red-700 transition duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
               >
                 <Youtube className="mr-2" /> Voir la vidéo explicative
               </a>
@@ -169,7 +169,7 @@ export default function App() {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <CheckCircle2 className="text-brand-blue mt-1 mr-3 shrink-0" size={20} />
-                  <span><strong className="text-gray-900">0% d'intérêt pendant tes études.</strong> C'est le gouvernement qui paie les intérêts pour toi ! Tu ne paies rien pendant que tu étudies.</span>
+                  <span><strong className="text-gray-900">0% d'intérêt pendant tes études.</strong> C'est le gouvernement qui paie les intérêts pour toi ! Tu ne paies rien pendant que tu études.</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="text-brand-blue mt-1 mr-3 shrink-0" size={20} />
@@ -202,11 +202,11 @@ export default function App() {
                 </li>
                 <li className="flex items-start">
                   <Star className="text-white mt-1 mr-3 shrink-0" size={20} />
-                  <span><strong className="font-bold">Ton revenu à toi.</strong> Elle est basée sur tes revenus (pas ceux de tes parents).</span>
+                  <span><strong className="font-bold">Basée sur tes besoins réels.</strong> Elle est calculée selon ta situation financière.</span>
                 </li>
                 <li className="flex items-start bg-white/20 p-3 rounded-xl mt-4">
                   <Award className="text-white mt-1 mr-3 shrink-0" size={20} />
-                  <span><strong className="font-extrabold text-brand-dark">Bonus 15% :</strong> Si tu reçois une bourse et que tu termines ton programme dans les temps prévus, le gouvernement efface 15% de ton prêt à rembourser !</span>
+                  <span><strong className="font-extrabold text-brand-dark">Bonus 15% :</strong> Si tu reçois une bourse et que tu termines ton programme dans les temps prévus, le gouvernement efface 15% de ta dette !</span>
                 </li>
               </ul>
             </motion.div>
@@ -251,7 +251,7 @@ export default function App() {
             <div className="mb-10 bg-blue-50 border border-blue-100 p-4 rounded-xl flex items-center justify-center gap-3 relative z-10">
               <Info className="text-brand-blue shrink-0" size={24} />
               <p className="text-blue-900 text-sm md:text-base">
-                Vous venez de l'étranger ? <a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux" target="_blank" rel="noreferrer" className="font-bold underline hover:text-brand-dark transition">Vérifiez les programmes spécifiques pour les étudiants internationaux.</a>
+                Vous venez de l'étranger ? <a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux" target="_blank" rel="noreferrer" className="font-bold underline hover:no-underline">Consultez l'aide pour les étudiants internationaux.</a>
               </p>
             </div>
             
@@ -269,7 +269,7 @@ export default function App() {
                     <CheckCircle2 className="text-brand-green text-xl mr-2" size={20} />
                     <h5 className="font-bold text-lg">Écoles Publiques</h5>
                   </div>
-                  <p className="text-sm text-gray-300">Si tu vas dans un Cégep public ou un Centre de formation professionnelle (CFP) d'un centre de services scolaire, <strong>ton programme est généralement reconnu d'office !</strong></p>
+                  <p className="text-sm text-gray-300">Si tu vas dans un Cégep public ou un Centre de formation professionnelle (CFP) d'un centre de services scolaire, <strong>ton programme est reconnu automatiquement</strong>.</p>
                 </div>
                 
                 <div className="bg-white/10 p-5 rounded-xl border border-brand-yellow/50">
@@ -277,10 +277,10 @@ export default function App() {
                     <TriangleAlert className="text-brand-yellow text-xl mr-2" size={20} />
                     <h5 className="font-bold text-lg">Écoles Privées (Collèges privés)</h5>
                   </div>
-                  <p className="text-sm text-gray-300 mb-3">Tu as droit à l'AFE <strong>UNIQUEMENT</strong> si le programme précis que tu as choisi est officiellement reconnu par le Ministère (MEQ/MES). Vérifie-le toujours avec l'école avant de payer ton inscription !</p>
+                  <p className="text-sm text-gray-300 mb-3">Tu as droit à l'AFE <strong>UNIQUEMENT</strong> si le programme précis que tu as choisi est officiellement reconnu par le Ministère de l'Éducation.</p>
                   <div className="bg-black/20 p-3 rounded-lg">
                     <p className="text-xs text-gray-300 mb-2">Consulte les listes officielles (PDF) :</p>
-                    <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/pret-temps-partiel/formulaires-temps-partiel" target="_blank" rel="noreferrer" className="inline-flex items-center text-brand-yellow hover:text-yellow-300 text-sm font-bold">
+                    <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/pret-temps-partiel/formulaires-temps-partiel" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-brand-yellow hover:underline font-bold text-sm">
                       Établissements et programmes reconnus <ExternalLink size={14} className="ml-1" />
                     </a>
                   </div>
@@ -296,7 +296,7 @@ export default function App() {
             <div className="text-center mb-10 relative z-10">
               <span className="text-brand-blue font-bold uppercase tracking-wider text-sm mb-2 block">L'indépendance financière</span>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Quand deviens-tu « autonome » ?</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">À partir de ce moment, <strong>le salaire de tes parents ne compte plus du tout</strong> dans le calcul de ton aide. Tu pourrais recevoir beaucoup plus !</p>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">À partir de ce moment, <strong>le salaire de tes parents ne compte plus du tout</strong> dans le calcul de ton aide. Tu pourras recevoir une aide basée uniquement sur tes revenus !</p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -317,8 +317,8 @@ export default function App() {
             <div className="bg-red-50 border border-red-100 p-6 rounded-2xl flex items-start gap-4">
               <AlertOctagon className="text-brand-red shrink-0 mt-1" size={28} />
               <div>
-                <h4 className="font-bold text-red-800 mb-1">Mythe à débunker !</h4>
-                <p className="text-red-900 text-sm">Plusieurs croient qu'à <strong>25 ans</strong> on devient automatiquement autonome. <strong>FAUX !</strong> Il n'y a pas d'âge automatique. Ce sont uniquement les critères ci-dessus qui s'appliquent.</p>
+                <h4 className="font-bold text-red-800 mb-1">Mythe à déconstruire !</h4>
+                <p className="text-red-900 text-sm">Plusieurs croient qu'à <strong>25 ans</strong> on devient automatiquement autonome. <strong>FAUX !</strong> Il n'y a pas d'âge automatique. Ce sont les critères ci-dessus qui comptent.</p>
               </div>
             </div>
           </motion.div>
@@ -356,7 +356,7 @@ export default function App() {
                     </li>
                     <li className="flex items-start">
                       <Star className="text-brand-yellow mt-1 mr-3 shrink-0" size={18} />
-                      <span className="text-sm text-purple-50"><strong>Le gros avantage :</strong> Ton prêt est converti en bourse à 100%. Tu n'auras <strong>aucune dette</strong> d'études envers l'AFE !</span>
+                      <span className="text-sm text-purple-50"><strong>Le gros avantage :</strong> Ton prêt est converti en bourse à 100%. Tu n'auras <strong>aucune dette</strong> d'études envers le gouvernement !</span>
                     </li>
                   </ul>
                 </div>
@@ -375,7 +375,7 @@ export default function App() {
                     </li>
                     <li className="flex items-start">
                       <TriangleAlert className="text-orange-300 mt-1 mr-3 shrink-0" size={18} />
-                      <span className="text-sm text-purple-50"><strong>Attention :</strong> Le prêt n'est <em>pas</em> automatiquement converti en bourse. Le calcul régulier (Prêt vs Bourse) s'applique selon tes revenus.</span>
+                      <span className="text-sm text-purple-50"><strong>Attention :</strong> Le prêt n'est <em>pas</em> automatiquement converti en bourse. Le calcul régulier (Prêt vs Bourse) s'applique.</span>
                     </li>
                   </ul>
                 </div>
@@ -386,21 +386,21 @@ export default function App() {
                 <HelpingHand className="text-3xl md:text-4xl text-brand-yellow mr-4 md:mr-6 mt-1 shrink-0" size={36} />
                 <div>
                   <h4 className="font-bold text-xl mb-2 text-white">Pour les DEUX situations : Allocation pour besoins particuliers</h4>
-                  <p className="text-sm text-purple-50">Un programme supplémentaire existe pour rembourser des dépenses spécifiques liées à ton diagnostic : achat d'un ordinateur portable, logiciels spécialisés (ex: Antidote), casque antibruit, ou transport adapté.</p>
+                  <p className="text-sm text-purple-50">Un programme supplémentaire existe pour rembourser des dépenses spécifiques liées à ton diagnostic : achat d'un ordinateur portable, logiciels spécialisés (Antidote), transport adapté, etc.</p>
                 </div>
               </div>
 
               {/* Liens officiels Handicap */}
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-                <a href="https://cdn-contenu.quebec.ca/cdn-contenu/enseignement-superieur/aide-financiere-etudes/prets-bourses/annee-en-cours/1015-certificat-medical-DFM-2025-2026.pdf" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white text-brand-purple px-6 py-3 rounded-xl hover:bg-gray-100 transition shadow-md font-bold w-full md:w-auto justify-center">
+                <a href="https://cdn-contenu.quebec.ca/cdn-contenu/enseignement-superieur/aide-financiere-etudes/prets-bourses/annee-en-cours/1015-certificat-medical-DFM-2025-2026.pdf" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full font-bold text-sm transition">
                   <FileSignature size={20} />
                   Certificat médical DFM (PDF)
                 </a>
-                <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/allocation-besoins-particuliers-jeunes" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-brand-dark text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition shadow-md font-bold w-full md:w-auto justify-center border border-gray-700">
+                <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/allocation-besoins-particuliers-jeunes" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full font-bold text-sm transition">
                   <ExternalLink size={20} className="text-brand-yellow" />
                   Allocation (Jeunes)
                 </a>
-                <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/allocation-besoins-particuliers-adultes" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-brand-dark text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition shadow-md font-bold w-full md:w-auto justify-center border border-gray-700">
+                <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/allocation-besoins-particuliers-adultes" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full font-bold text-sm transition">
                   <ExternalLink size={20} className="text-brand-yellow" />
                   Allocation (Adultes)
                 </a>
@@ -453,7 +453,7 @@ export default function App() {
             <Info className="text-brand-blue shrink-0 mt-1" size={28} />
             <div>
               <h4 className="font-bold text-blue-900 mb-1">La règle de la « résidence réputée »</h4>
-              <p className="text-blue-800 text-sm">Si ton centre de formation professionnelle (FP), ton Cégep ou ton université est <strong>accessible en transport en commun depuis chez tes parents</strong>, l'AFE te considère comme habitant chez eux — même si tu paies un appartement ! Tu recevras alors ~ 650 $/mois, et non 1 387 $. C'est une surprise fréquente à prévoir !</p>
+              <p className="text-blue-800 text-sm">Si ton centre de formation professionnelle (FP), ton Cégep ou ton université est <strong>accessible en transport en commun depuis chez tes parents</strong>, l'AFE considère que tu n'es pas obligé de déménager. Résultat : ~ 650 $ au lieu de 1 387 $ ! Même si tu paies un loyer ailleurs. C'est une surprise qu'il faut connaître.</p>
             </div>
           </motion.div>
 
@@ -506,7 +506,7 @@ export default function App() {
                 <div className="text-brand-yellow flex justify-center mb-3"><ShoppingCart size={40} /></div>
                 <h4 className="font-bold text-xl mb-2">Dépenses admises</h4>
                 <p className="text-sm text-gray-300">Ce que l'AFE juge nécessaire pour tes études.</p>
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-900 text-xs text-left p-3 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-20 shadow-xl">
+                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-900 text-xs text-left p-3 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity z-50">
                   <ul className="list-disc pl-4 text-gray-200 space-y-1">
                     <li>Droits de scolarité</li>
                     <li>Frais de subsistance (logement, repas, transport)</li>
@@ -522,7 +522,7 @@ export default function App() {
                 <div className="text-brand-yellow flex justify-center mb-3"><Users size={40} /></div>
                 <h4 className="font-bold text-xl mb-2">Contributions</h4>
                 <p className="text-sm text-gray-300">La part que tu dois assumer, selon tes moyens.</p>
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-900 text-xs text-left p-3 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-20 shadow-xl">
+                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-900 text-xs text-left p-3 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity z-50">
                   <ul className="list-disc pl-4 text-gray-200 space-y-1">
                     <li><strong>Tes revenus :</strong> Salaire de ta job d'été ou temps partiel (avec un montant protégé).</li>
                     <li><strong>Tes parents :</strong> Leur contribution selon leurs revenus (si tu es à leur charge).</li>
@@ -548,7 +548,7 @@ export default function App() {
                 <Users className="text-brand-blue mr-4 mt-1 shrink-0" size={32} />
                 <div>
                   <h4 className="font-bold text-brand-dark text-lg mb-1">Le mythe sur les parents</h4>
-                  <p className="text-gray-700 text-sm">Beaucoup pensent : <em>"Mes parents gagnent trop, je n'aurai rien"</em>. C'est FAUX ! La contribution parentale baisse considérablement s'il y a d'autres enfants dans la famille, s'ils sont aussi aux études postsecondaires, ou si tes parents sont séparés.</p>
+                  <p className="text-gray-700 text-sm">Beaucoup pensent : <em>"Mes parents gagnent trop, je n'aurai rien"</em>. C'est FAUX ! La contribution parentale baisse considérablement s'il y a d'autres enfants aux études ou si tes parents sont séparés/divorcés.</p>
                 </div>
               </div>
             </motion.div>
@@ -558,7 +558,7 @@ export default function App() {
                 <Briefcase className="text-brand-green mr-4 mt-1 shrink-0" size={32} />
                 <div>
                   <h4 className="font-bold text-brand-dark text-lg mb-1">Puis-je avoir une "jobine" ?</h4>
-                  <p className="text-gray-700 text-sm">OUI ! L'AFE encourage le travail étudiant. Un <strong>revenu protégé</strong> (les premiers milliers de dollars que tu gagnnes dans l'année) n'est pas calculé dans ta contribution. Travailler à temps partiel ne va pas annuler ton aide financière !</p>
+                  <p className="text-gray-700 text-sm">OUI ! L'AFE encourage le travail étudiant. Un <strong>revenu protégé</strong> (les premiers milliers de dollars que tu gagnnes dans l'année) n'est pas calculé. Travailler n'annule jamais ton aide !</p>
                 </div>
               </div>
             </motion.div>
@@ -571,7 +571,7 @@ export default function App() {
             <div className="text-center mb-8 relative z-10">
               <span className="text-gray-600 font-bold uppercase tracking-wider text-sm mb-2 block">Information Historique</span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Bourses Perspective Québec</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">Un programme incitatif qui offrait jusqu'à 9 000 $ au collégial et 20 000 $ à l'université dans des domaines ciblés (Santé, TI, Génie, Éducation).</p>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">Un programme incitatif qui offrait jusqu'à 9 000 $ au collégial et 20 000 $ à l'université dans des domaines ciblés (Santé, TI, Ingénierie, Électricité, etc.) pour encourager les études dans les secteurs prioritaires.</p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-sm text-center max-w-2xl mx-auto border border-gray-200">
@@ -602,7 +602,7 @@ export default function App() {
               </div>
               <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
                 <h4 className="font-bold text-brand-blue mb-1">2. NAS Obligatoire</h4>
-                <p className="text-sm text-gray-600">Numéro d'assurance sociale. Si tu n'en as pas, <a href="https://www.canada.ca/fr/emploi-developpement-social/services/numero-assurance-sociale.html" target="_blank" rel="noreferrer" className="text-brand-yellow font-bold hover:underline">fais la demande à Service Canada</a> maintenant !</p>
+                <p className="text-sm text-gray-600">Numéro d'assurance sociale. Si tu n'en as pas, <a href="https://www.canada.ca/fr/emploi-developpement-social/services/numero-assurance-social/demande.html" target="_blank" rel="noreferrer" className="underline text-brand-blue hover:no-underline">demande-le à Service Canada</a>.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
                 <h4 className="font-bold text-brand-blue mb-1">3. Compte Parents</h4>
@@ -613,16 +613,16 @@ export default function App() {
 
           <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 mb-12">
             {[
-              { num: 1, icon: FileSignature, title: "Le Certificat", desc: "Vers le mois d'août, si ta demande est acceptée, l'AFE dépose un document appelé \"Certificat de garantie\" dans ton dossier en ligne." },
-              { num: 2, icon: University, title: "La Banque", desc: "Tu dois absolument prendre ce certificat et l'apporter à ton institution financière (ta banque ou ta caisse) pour signer ton contrat de prêt étudiant." },
-              { num: 3, icon: HandCoins, title: "Le Versement", desc: "Une fois le contrat signé à la banque et ton inscription confirmée par ton école, la banque déposera l'argent directement dans ton compte !", highlight: true }
+              { num: 1, icon: FileSignature, title: "Le Certificat", desc: "Vers le mois d'août, si ta demande est acceptée, l'AFE dépose un document appelé \"Certificat de garantie\" dans ton dossier AFE en ligne." },
+              { num: 2, icon: University, title: "La Banque", desc: "Tu dois absolument prendre ce certificat et l'apporter à ton institution financière (ta banque ou ta caisse) pour signer ton contrat de prêt." },
+              { num: 3, icon: HandCoins, title: "Le Versement", desc: "Une fois le contrat signé à la banque et ton inscription confirmée par ton école, la banque déposera l'argent directement dans ton compte chaque mois !" }
             ].map((step, i) => (
               <motion.div 
                 key={i} 
                 className="flex-1 bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center relative pt-12"
                 {...fadeIn}
               >
-                <div className={`absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 ${step.highlight ? 'bg-brand-yellow text-brand-dark' : 'bg-brand-dark text-white'} rounded-full flex items-center justify-center font-bold text-xl border-4 border-gray-50`}>
+                <div className={`absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 ${step.highlight ? 'bg-brand-yellow text-brand-dark' : 'bg-brand-dark text-white'} rounded-full flex items-center justify-center font-bold text-lg`}>
                   {step.num}
                 </div>
                 <step.icon className={`mx-auto mb-4 ${step.highlight ? 'text-brand-yellow' : 'text-brand-blue'}`} size={40} />
@@ -638,7 +638,7 @@ export default function App() {
               href="https://www.quebec.ca/education/aide-financiere-aux-etudes/services-ligne" 
               target="_blank" 
               rel="noreferrer" 
-              className="inline-flex items-center gap-3 bg-brand-blue text-white px-8 py-5 rounded-full font-black text-xl hover:bg-blue-700 transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+              className="inline-flex items-center gap-3 bg-brand-blue text-white px-8 py-5 rounded-full font-black text-xl hover:bg-blue-700 transition shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               <Laptop size={28} />
               Accéder à mon dossier en ligne (Faire ma demande)
@@ -658,10 +658,10 @@ export default function App() {
             
             {[
               { date: "Mai 2026", title: "Ouverture des demandes", desc: "Agis tôt ! Fais ta demande dès l'ouverture pour être sûr(e) d'avoir ton argent prêt pour la rentrée.", icon: CalendarCheck, color: "brand-yellow" },
-              { date: "Le délai de 45 jours", title: "Pour fournir un document", desc: "Si l'AFE t'écrit pour te demander un document (ex: preuve de revenus), tu as exactement 45 jours pour l'envoyer. Sinon ? Ton dossier est gelé !", icon: Clock, color: "brand-blue", reverse: true },
-              { date: "Le délai de 30 jours", title: "Demande initiale tardive", desc: "Tu as jusqu'à 30 jours après ton dernier mois d'études pour soumettre une première demande pour l'année en cours.", icon: Hourglass, color: "brand-blue" },
-              { date: "29 décembre 2026", title: "Date butoir finale !", desc: "Dernier délai absolu pour envoyer un document manquant ou signaler un changement pour ton année d'attribution.", icon: Lock, color: "brand-red", reverse: true },
-              { date: "Janvier / Février 2027", title: "Obligatoire : Confirmation des revenus", desc: "Tu recevras un courriel pour confirmer tes revenus réels de l'année. Si tu ne le fais pas, les versements s'arrêtent net !", icon: MailOpen, color: "orange-500" }
+              { date: "Le délai de 45 jours", title: "Pour fournir un document", desc: "Si l'AFE t'écrit pour te demander un document (ex: preuve de revenus), tu as exactement 45 jours pour l'envoyer.", icon: Clock, color: "brand-blue" },
+              { date: "Le délai de 30 jours", title: "Demande initiale tardive", desc: "Tu as jusqu'à 30 jours après ton dernier mois d'études pour soumettre une première demande pour l'année.", icon: Hourglass, color: "brand-blue" },
+              { date: "29 décembre 2026", title: "Date butoir finale !", desc: "Dernier délai absolu pour envoyer un document manquant ou signaler un changement pour ton année d'attribution.", icon: Lock, color: "brand-red" },
+              { date: "Janvier / Février 2027", title: "Obligatoire : Confirmation des revenus", desc: "Tu recevras un courriel pour confirmer tes revenus réels de l'année. Si tu ne le fais pas, ton aide pourrait être révisée.", icon: MailOpen, color: "brand-green", reverse: true }
             ].map((item, i) => (
               <motion.div 
                 key={i} 
@@ -686,7 +686,7 @@ export default function App() {
               <TriangleAlert className="text-brand-red mr-4 mt-1 shrink-0" size={32} />
               <div>
                 <h4 className="font-bold text-red-700 text-lg mb-1">Piège à éviter : Les abandons de cours !</h4>
-                <p className="text-red-900 text-sm">Si tu décides d'abandonner un cours en plein milieu de ta session et que tu perds ton statut "temps plein", <strong>ton aide sera coupée ou recalculée en dette</strong>. Des pénalités importantes peuvent s'appliquer (versements en trop à rembourser). Va toujours voir ton API (Aide pédagogique) ou le bureau d'aide financière avant d'abandonner un cours !</p>
+                <p className="text-red-900 text-sm">Si tu décides d'abandonner un cours en plein milieu de ta session et que tu perds ton statut "temps plein", <strong>ton aide sera coupée ou récupérée</strong>. Consulte TOUJOURS ton bureau d'aide financière avant d'abandonner !</p>
               </div>
             </div>
           </motion.div>
@@ -698,18 +698,18 @@ export default function App() {
             className="bg-gradient-to-r from-brand-blue to-blue-700 rounded-[3rem] p-8 md:p-16 text-center shadow-2xl relative overflow-hidden"
             {...fadeIn}
           >
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-30"></div>
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjEiLz48L3N2Zz4=')] opacity-50"></div>
             
             <div className="relative z-10">
               <div className="inline-block bg-brand-yellow text-brand-dark font-bold px-4 py-1 rounded-full mb-6">Action !</div>
               <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">Combien pourrais-tu avoir ?</h2>
-              <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">N'essaie pas de calculer ça sur le coin d'une table. Le gouvernement a créé un <strong>Simulateur de calcul</strong> gratuit et anonyme. Ça prend 5 minutes !</p>
+              <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">N'essaie pas de calculer ça sur le coin d'une table. Le gouvernement a créé un <strong>Simulateur de calcul</strong> gratuit et anonyme !</p>
               
               <a 
                 href="https://www.quebec.ca/education/aide-financiere-aux-etudes/prets-bourses-temps-plein/calcul/simulateur-calcul" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-white text-brand-blue font-bold text-xl py-5 px-10 rounded-full hover:bg-gray-100 transition duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-2"
+                className="inline-flex items-center justify-center bg-white text-brand-blue font-bold text-xl py-5 px-10 rounded-full hover:bg-gray-100 transition duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
               >
                 Lancer le simulateur AFE
               </a>
@@ -729,10 +729,10 @@ export default function App() {
             <PiggyBank size={48} />
           </div>
           <h3 className="text-white text-xl font-bold mb-4">Des questions ? Tu n'es jamais seul(e) !</h3>
-          <p className="mb-6">Si tu es au secondaire, va voir ton conseiller d'orientation. Si tu es déjà au Cégep, à l'Université ou en FP, visite le <strong>Bureau d'aide financière</strong> de ton école, ils sont là pour ça !</p>
+          <p className="mb-6">Si tu es au secondaire, va voir ton conseiller d'orientation. Si tu es déjà au Cégep, à l'Université ou en FP, visite le <strong>Bureau d'aide financière</strong> de ton établissement. Ils sont là pour toi !</p>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
-            <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl transition font-bold border border-gray-700">
+            <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full transition font-bold text-lg">
               <ExternalLink size={20} className="text-brand-yellow" />
               Site officiel de l'AFE
             </a>
