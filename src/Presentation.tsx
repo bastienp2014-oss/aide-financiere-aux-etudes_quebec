@@ -155,7 +155,7 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
       <div className="mt-8 bg-red-50 border border-red-100 p-6 rounded-2xl flex items-start gap-4">
         <AlertOctagon className="text-brand-red shrink-0" size={32} />
         <div>
-          <h4 className="font-bold text-red-800 text-xl">Mythe à débunker !</h4>
+          <h4 className="font-bold text-red-800 text-xl">Mythe à déconstruire !</h4>
           <p className="text-red-900 text-lg">On ne devient pas autonome automatiquement à <strong>25 ans</strong>. Il n'y a pas d'âge automatique. Ce sont uniquement les critères ci-dessus qui comptent.</p>
         </div>
       </div>
