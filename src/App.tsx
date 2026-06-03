@@ -88,17 +88,19 @@ export default function App() {
           </span>
         </button>
 
-        {/* Mobile : Lien vers la vidéo YouTube (format idéal pour mobile) */}
-        <a 
-          href="https://youtube.com"
-          target="_blank"
-          rel="noreferrer"
-          className="flex md:hidden bg-red-600 text-white p-4 rounded-full shadow-2xl hover:bg-red-700 transition-all transform hover:scale-110 items-center gap-2"
-          title="Voir la présentation vidéo"
-        >
-          <Youtube size={24} />
-          <span className="font-bold">Voir la vidéo</span>
-        </a>
+        {/* Mobile : Lien vers la vidéo YouTube caché temporairement */}
+        {false && (
+          <a 
+            href="https://youtube.com"
+            target="_blank"
+            rel="noreferrer"
+            className="flex md:hidden bg-red-600 text-white p-4 rounded-full shadow-2xl hover:bg-red-700 transition-all transform hover:scale-110 items-center gap-2"
+            title="Voir la présentation vidéo"
+          >
+            <Youtube size={24} />
+            <span className="font-bold">Voir la vidéo</span>
+          </a>
+        )}
       </div>
       {/* En-tête / Hero Section */}
       <header className="snap-start min-h-screen bg-brand-dark text-white flex flex-col justify-center px-6 relative overflow-hidden">
@@ -129,14 +131,17 @@ export default function App() {
             >
               Découvre comment ça marche <ArrowDown className="ml-2" />
             </a>
-            <a 
-              href="https://youtube.com" 
-              target="_blank" 
-              rel="noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-red-600 text-white font-bold text-lg py-4 px-8 rounded-full hover:bg-red-700 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              <Youtube className="mr-2" /> Voir la vidéo explicative
-            </a>
+            {/* Bouton vidéo caché temporairement */}
+            {false && (
+              <a 
+                href="https://youtube.com" 
+                target="_blank" 
+                rel="noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-red-600 text-white font-bold text-lg py-4 px-8 rounded-full hover:bg-red-700 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <Youtube className="mr-2" /> Voir la vidéo explicative
+              </a>
+            )}
           </div>
         </motion.div>
       </header>
@@ -194,6 +199,10 @@ export default function App() {
                 <li className="flex items-start">
                   <Star className="text-white mt-1 mr-3 shrink-0" size={20} />
                   <span><strong className="font-bold">Pour les grands besoins.</strong> Elle t'est versée quand le prêt maximum ne suffit pas à couvrir tes besoins financiers.</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="text-white mt-1 mr-3 shrink-0" size={20} />
+                  <span><strong className="font-bold">Ton revenu à toi.</strong> Elle est basée sur tes revenus (pas ceux de tes parents).</span>
                 </li>
                 <li className="flex items-start bg-white/20 p-3 rounded-xl mt-4">
                   <Award className="text-white mt-1 mr-3 shrink-0" size={20} />
@@ -308,7 +317,7 @@ export default function App() {
             <div className="bg-red-50 border border-red-100 p-6 rounded-2xl flex items-start gap-4">
               <AlertOctagon className="text-brand-red shrink-0 mt-1" size={28} />
               <div>
-                <h4 className="font-bold text-red-800 mb-1">Mythe à déconstruire !</h4>
+                <h4 className="font-bold text-red-800 mb-1">Mythe à débunker !</h4>
                 <p className="text-red-900 text-sm">Plusieurs croient qu'à <strong>25 ans</strong> on devient automatiquement autonome. <strong>FAUX !</strong> Il n'y a pas d'âge automatique. Ce sont uniquement les critères ci-dessus qui s'appliquent.</p>
               </div>
             </div>

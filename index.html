@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Google AI Studio App</title>
+    <script>
+      // Clear any legacy/stale Service Workers that intercept assets and cause 404/network errors
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          let checkReload = false;
+          for (let registration of registrations) {
+            registration.unregister();
+            checkReload = true;
+          }
+          if (checkReload) {
+            console.log('Stale service worker found and unregistered. Reloading to ensure clean asset fetch...');
+            window.location.reload();
+          }
+        }).catch(function(err) {
+          console.warn('Service worker unregistration failed: ', err);
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

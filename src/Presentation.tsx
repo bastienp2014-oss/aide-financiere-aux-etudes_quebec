@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { generatePresentationPPTX } from "./pptxGenerator";
+import { narrationScripts } from "./narration";
 import { 
   X, ChevronLeft, ChevronRight, Maximize2, Download, 
   Coins, GraduationCap, HandCoins, Gift, Star, Award, 
@@ -9,7 +11,7 @@ import {
   ShoppingCart, Users, CircleDollarSign, Minus, Equal, 
   FileSignature, University, CalendarCheck, Hourglass, 
   Lock, MailOpen, AlertOctagon, Baby, Briefcase, Info,
-  UserCheck, ExternalLink, Youtube
+  UserCheck, ExternalLink, Volume2, VolumeX, Play, Square
 } from "lucide-react";
 
 interface SlideProps {
@@ -463,22 +465,15 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
           </span>
         </div>
         <div className="flex items-center gap-1 md:gap-2 overflow-x-auto no-scrollbar">
-          <a 
-            href="https://youtube.com" 
-            target="_blank" 
-            rel="noreferrer"
-            className="flex items-center gap-1 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-bold text-xs md:text-sm transition shrink-0"
-          >
-            <Youtube size={16} />
-            <span className="hidden xs:inline">Voir la vidéo</span>
-            <span className="xs:hidden">Vidéo</span>
-          </a>
-          <button 
-            disabled
-            className="flex items-center gap-1 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-brand-blue hover:bg-blue-600 rounded-lg font-bold text-xs md:text-sm transition shrink-0 text-white disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <Download size={16} /> <span className="hidden sm:inline">PDF</span>
-          </button>
+          {/* Bouton PPTX caché temporairement */}
+          {false && (
+            <button 
+              onClick={generatePresentationPPTX}
+              className="flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-brand-green/90 hover:bg-brand-green rounded-lg font-bold text-xs md:text-sm transition shrink-0 text-white"
+            >
+              <Download size={16} /> <span className="hidden sm:inline">PowerPoint (PPTX)</span><span className="sm:hidden">PPTX</span>
+            </button>
+          )}
           <div className="flex items-center gap-1 ml-1 md:ml-2">
             <button onClick={prevSlide} className="p-1.5 md:p-2 hover:bg-white/10 rounded-full transition">
               <ChevronLeft size={20} />
