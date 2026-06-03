@@ -308,7 +308,7 @@ export default function App() {
             <div className="bg-red-50 border border-red-100 p-6 rounded-2xl flex items-start gap-4">
               <AlertOctagon className="text-brand-red shrink-0 mt-1" size={28} />
               <div>
-                <h4 className="font-bold text-red-800 mb-1">Mythe à débunker !</h4>
+                <h4 className="font-bold text-red-800 mb-1">Mythe à déconstruire !</h4>
                 <p className="text-red-900 text-sm">Plusieurs croient qu'à <strong>25 ans</strong> on devient automatiquement autonome. <strong>FAUX !</strong> Il n'y a pas d'âge automatique. Ce sont uniquement les critères ci-dessus qui s'appliquent.</p>
               </div>
             </div>
