@@ -77,7 +77,6 @@ export default function Presentation({ onClose }: { onClose: () => void }) {
           <ul className="space-y-4 text-xl">
             <li className="flex gap-4">⭐ <span><strong>C'est un cadeau !</strong> 0$ à rembourser, jamais.</span></li>
             <li className="flex gap-4">⭐ <span>Basée sur tes <strong>besoins réels</strong>.</span></li>
-            <li className="flex gap-4">⭐ <span>Ton revenu à toi (pas celui de tes parents).</span></li>
             <li className="mt-4 bg-white/40 p-4 rounded-xl flex gap-4 border border-brand-yellow">
               <Award className="shrink-0" />
               <span><strong>Bonus 15% :</strong> Si tu finis à temps, le gouvernement efface 15% de ton prêt !</span>
